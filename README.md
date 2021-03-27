@@ -22,10 +22,10 @@
 
 ```python
 
-!unzip -oq ./PaddleGAN-master.zip 
+#!unzip -oq ./PaddleGAN-master.zip 
 
-!pip install -r ./PaddleGAN-master/requirements.txt
-!python3 -m pip install --upgrade ppgan
+pip install -r ./PaddleGAN-master/requirements.txt
+python3 -m pip install --upgrade ppgan
 ```
 
 
@@ -35,9 +35,9 @@
 
 ```python
 
-%cd ./PaddleGAN-master
+cd ./PaddleGAN-master
 
-!python -u applications/tools/first-order-demo.py  \
+python -u applications/tools/first-order-demo.py  \
      --driving_video ../1.mp4 \
      --source_image ../2.png \
      --relative --adapt_scale 
