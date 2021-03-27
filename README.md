@@ -22,9 +22,9 @@
 
 ```python
 
-!unzip -oq /home/aistudio/PaddleGAN-master.zip 
+!unzip -oq ./PaddleGAN-master.zip 
 
-!pip install -r /home/aistudio/PaddleGAN-master/requirements.txt
+!pip install -r ./PaddleGAN-master/requirements.txt
 !python3 -m pip install --upgrade ppgan
 ```
 
@@ -35,7 +35,7 @@
 
 ```python
 
-%cd /home/aistudio/PaddleGAN-master
+%cd ./PaddleGAN-master
 
 !python -u applications/tools/first-order-demo.py  \
      --driving_video ../1.mp4 \
