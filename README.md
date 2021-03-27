@@ -5,7 +5,7 @@
 ## AiStuido地址：https://aistudio.baidu.com/aistudio/projectdetail/1647685
 ## BiliBili视频地址：https://www.bilibili.com/video/BV1Zv411b7Pn
 
-## **这里使用的PaddleGan的套件，first order模型，用于人脸动作迁移**
+## **这里使用的PaddleGan套件的first order model模型，用于人脸动作迁移**
 #### **1. 准备好需要迁移的人脸动作视频（视频最好都是头部，头不要瞎动的那种，要不效果不是太好）**
 #### **2. 准备要动图片（也是只有头部）**
 #### **3. 运行脚本，等待输出~**
