@@ -1,0 +1,88 @@
+epochs: 200
+output_dir: output_dir
+
+model:
+  name: DCGANModel
+  generator:
+    name: DCGenerator
+    norm_type: batch
+    input_nz: 100
+    input_nc: 1
+    output_nc: 1
+    ngf: 64
+  discriminator:
+    name: DCDiscriminator
+    norm_type: batch
+    ndf: 64
+    input_nc: 1
+  gan_criterion:
+    name: GANLoss
+    gan_mode: vanilla
+
+dataset:
+  train:
+    name: SingleDataset
+    dataroot: data/mnist/train
+    batch_size: 128
+    preprocess:
+      - name: LoadImageFromFile
+        key: A
+      - name: Transfroms
+        input_keys: [A]
+        pipeline:
+          - name: Resize
+            size: [64, 64]
+            interpolation: 'bicubic' #cv2.INTER_CUBIC
+            keys: [image, image]
+          - name: Transpose
+            keys: [image, image]
+          - name: Normalize
+            mean: [127.5, 127.5, 127.5]
+            std: [127.5, 127.5, 127.5]
+            keys: [image, image]
+  test:
+    name: SingleDataset
+    dataroot: data/mnist/test
+    preprocess:
+      - name: LoadImageFromFile
+        key: A
+      - name: Transforms
+        input_keys: [A]
+        pipeline:
+          - name: Resize
+            size: [64, 64]
+            interpolation: 'bicubic' #cv2.INTER_CUBIC
+            keys: [image, image]
+          - name: Transpose
+            keys: [image, image]
+          - name: Normalize
+            mean: [127.5, 127.5, 127.5]
+            std: [127.5, 127.5, 127.5]
+            keys: [image, image]
+
+lr_scheduler:
+  name: LinearDecay
+  learning_rate: 0.0002
+  start_epoch: 100
+  decay_epochs: 100
+  # will get from real dataset
+  iters_per_epoch: 1
+
+optimizer:
+  optimizer_G:
+    name: Adam
+    net_names:
+      - netG
+    beta1: 0.5
+  optimizer_D:
+    name: Adam
+    net_names:
+      - netD
+    beta1: 0.5
+
+log_config:
+  interval: 100
+  visiual_interval: 500
+
+snapshot_config:
+  interval: 5
