@@ -13,12 +13,13 @@
 
 # 菩提老祖: 烧焦了诶~
 
-<img src="https://ai-studio-static-online.cdn.bcebos.com/b94857f896704fcbb88bf4081be2fdd96d2d5edec0a9400b91ec7e39e4724cf9" width = "800" height = "400" align=center />
+<img src="https://ai-studio-static-online.cdn.bcebos.com/b94857f896704fcbb88bf4081be2fdd96d2d5edec0a9400b91ec7e39e4724cf9" width = "700" height = "400" align=center />
 
 &nbsp; 
 
-
-<img src="https://wx2.sinaimg.cn/mw690/006AID3Hly1gols4lwr29g30dw07tnpt.gif" width = "800" height = "400" align=center />
+<div align='center'>
+  <img src='./t.gif'width='700' />
+</div>
 
 &nbsp; 
 
