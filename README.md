@@ -17,6 +17,11 @@
 
 &nbsp; 
 
+
+<img src="https://wx2.sinaimg.cn/mw690/006AID3Hly1gols4lwr29g30dw07tnpt.gif" width = "800" height = "400" align=center />
+
+&nbsp; 
+
 ### 解压PaddleGan包，并安装依赖包和ppgan
 
 
