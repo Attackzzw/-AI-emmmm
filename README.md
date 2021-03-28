@@ -13,7 +13,9 @@
 
 # 菩提老祖: 烧焦了诶~
 
-<img src="https://ai-studio-static-online.cdn.bcebos.com/b94857f896704fcbb88bf4081be2fdd96d2d5edec0a9400b91ec7e39e4724cf9" width = "700" height = "400" align=center />
+<div align='center'>
+  <img src="https://ai-studio-static-online.cdn.bcebos.com/b94857f896704fcbb88bf4081be2fdd96d2d5edec0a9400b91ec7e39e4724cf9" width = "700" height = "400" align=center />
+</div>
 
 &nbsp; 
 
